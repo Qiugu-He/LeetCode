@@ -50,6 +50,7 @@ class Solution {
         }
         
         for(int i =0; i< nums.length; i++){
+            //check complement
             int complement = target - nums[i];
             if(map.containsKey(complement) && map.get(complement) != i ){
                 return new int [] {i, map.get(complement)};
@@ -61,13 +62,14 @@ class Solution {
 }
 
 ```
-
-> Data Structure: HashMap <br>
-Map<key, value> map = new HashMap<>();<br><br>
-map.put(k,v)   //add value <br>
-map.get(k)      //get value by a given key<br>
-map.containsKey(k) // check if a given key exists in HashMap<br>
+```
+Data Structure: HashMap 
+Map<key, value> map = new HashMap<>();
+map.put(k,v)   //add value 
+map.get(k)      //get value by a given key
+map.containsKey(k) // check if a given key exists in HashMap
 map.containsValue(v) // check if a given value exists in HashMap
+```
 
 
 
