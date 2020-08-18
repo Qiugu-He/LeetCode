@@ -21,7 +21,7 @@ Notice that the row index starts from 0.
 ```Java
 /*
     Strategy:
-    This algorithm init a single ArrayList, expanding and replacing elements in it when we build for each row
+    This algorithm init a single ArrayList, expanding and replacing elements in it when we building for each row
         for row != 0 && row = last
             row[j] = sum { row[j] + row[j-1] }
 
