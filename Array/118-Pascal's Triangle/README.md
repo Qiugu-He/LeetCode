@@ -2,8 +2,11 @@
 Given an integer rowIndex, return the rowIndexth row of the Pascal's triangle.
 Notice that the row index starts from 0.
 
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
+<img src="https://github.com/Qiugu-He/LeetCode/blob/master/Array/118-Pascal's%20Triangle/pic.png" alt="My cool logo"/>
+
 ```
-    N: 5
+    For example: N: 5
     Pascal's Triangle:
     [
         [1],
