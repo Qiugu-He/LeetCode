@@ -20,7 +20,7 @@ Design an algorithm to find the maximum profit. You may complete as many transac
         Space complexity : O(1)
     */
 
-    class Solution {
+    class Solution { 
         public int maxProfit(int[] prices) {
             int i = 0;
             int valley = prices[0];
