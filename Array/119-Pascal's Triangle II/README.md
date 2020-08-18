@@ -1,7 +1,7 @@
 ## #118. Pascal's Triangle
 Given a non-negative integer numRows, generate the first numRows of Pascal's triangle.
-In Pascal's triangle, each number is the sum of the two numbers directly above it.
 
+In Pascal's triangle, each number is the sum of the two numbers directly above it.
 <img src="https://github.com/Qiugu-He/LeetCode/blob/master/Array/118-Pascal's%20Triangle/pic.png" alt="My cool logo"/>
 ```
     Input: 5
@@ -17,32 +17,31 @@ In Pascal's triangle, each number is the sum of the two numbers directly above i
 
 ## O(n) Solution
 ```Java
-
     /*
         This problem using Dynamic programming approach
 
+        Pesudo Code:
+            Triangel init
+
+            //Base case 1:
+            rowNums is 0, then there are 0 rows
+
+            //Base case 2: 
+            The first row always 1
+
+            For each remaining row r:
+                the first element always 1
+
+                for each remaining element j till j -1, the value of j is:
+                    sum { [row-1][j-1], [row-1][j] }
+            
+                The last element of a row alwyas 1
+            
+            return Triangel
+
+            
         Time complexity : O(n^2)
         Space complexity: O(n^2)
-
-        Pesudo Code:
-        Triangel init
-
-        //Base case 1:
-        rowNums is 0, then there are 0 rows
-
-        //Base case 2: 
-        The first row always 1
-
-        For each remaining row r:
-            the first element always 1
-
-            for each remaining element j till j -1, the value of j is:
-                sum { [row-1][j-1], [row-1][j] }
-        
-            The last element of a row alwyas 1
-        
-        return Triangel
-
     */
     class Solution {
     public List<List<Integer>> generate(int numRows) {
