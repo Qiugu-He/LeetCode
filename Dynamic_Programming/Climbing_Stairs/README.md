@@ -30,13 +30,14 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 
 -For example: N= 5, the recursion tree looks like: 
 
-                                      (0, 5)
-                        (1,5)                        (2, 5)
-                     
+                                        (0, 5)
+                               /                       \
+                           (1,5)                     (2, 5)
+                     /             \              /         \
                   (2, 5)         (3,5)          (3,5)       (4,5)
-                    
+               /       \         /      \       /   \       /   \
            (3,5)      (4,5)   (4,5)   (5,5)  (4,5) (5,5)  (5,5)(6,5)
-
+            /\         /\       /\
         (4,5)(5,5) (5,5)(6,5)(5,5)(6,5)               
                 
 
