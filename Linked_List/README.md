@@ -11,11 +11,9 @@ For example, suppose you had a linked list:
     a1 ->a2 -> ••• ->an ->b1 ->b2 -> ••• ->bn and you wanted to rearrange it into:
     a1 ->b1 ->a2 ->b2 -> ••• ->an ->bn. 
 
-You do not know the length of the linked list (but you do know that the length is an even number).
-
-You could have one pointer pl (the fast pointer) move every two elements for every one move that p2
+Using 2 pointer: one pointer pl (the fast pointer) move every two elements for every one move that p2
 makes. 
 
-When pl hits the end of the linked list, p2 will be at the midpoint. Then, move pl back to the front
+When p1 hits the end of the linked list, p2 will be at the midpoint. Then, move pl back to the front
 and begin "weaving"the elements. On each iteration, p2 selects an element and inserts it after pl. 
 ```
