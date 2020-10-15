@@ -24,7 +24,6 @@ Traverse the given Binary Tree. For every node:
     - If not leaf node then if the left subtree is NULL, 
     - then recur for the right subtree. And if the right subtree is NULL, then recur for the left subtree. 
     - If both left and right subtrees are not NULL, then take the minimum of two heights.
-
 */
 
 int minimumDepth(Node root) 
