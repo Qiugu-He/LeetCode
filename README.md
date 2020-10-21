@@ -1,1 +1,2 @@
-Daily updating  ...
+Key Note Summary:
+
