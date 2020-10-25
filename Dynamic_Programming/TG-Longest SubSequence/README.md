@@ -34,7 +34,7 @@ public class LongestCommonSubsequence
         else if (X[i-1] == Y[j-1]) 
             L[i][j] = L[i-1][j-1] + 1; 
         else
-            L[i][j] = max(L[i-1][j], L[i][j-1]); 
+            L[i][j] = Math.max(L[i-1][j], L[i][j-1]); 
       } 
     }// outer for
      

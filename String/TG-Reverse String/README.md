@@ -26,6 +26,7 @@ int reverse (int arr[], int start, int end){
         temp = arr[start];
         arr[start] = arr[end];
         arr[end] = temp;
+        
         start ++ ;
         end --;
     }
