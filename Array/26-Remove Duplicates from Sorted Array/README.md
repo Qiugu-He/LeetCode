@@ -12,7 +12,7 @@ Do not allocate extra space for another array, you must do this by modifying the
 ## Solution: Two Pointer
 ```Java
 /* Pseudo
-    using two pointers
+    using two pointers to replace the items
     i -> slow runner
     j -> fast runner
     

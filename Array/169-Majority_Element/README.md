@@ -17,23 +17,22 @@ Solution - O(n)
         The stragegy is using two pointers to scan the array from both side
     */
     class Solution {
-        public int[] twoSum(int[] numbers, int target) {
-            if(numbers == null || numbers.length == 0)
-                return ull;
-            int i =0;
-            int j = numbers.length -1;
+        int majorityCount = nums.length/2;
 
-            while(i < j){
-                int check = numbers[i]+numbers[j];
+                for (int num : nums) {
+                    int count = 0;
+                    for (int elem : nums) {
+                        if (elem == num) {
+                            count += 1;
+                        }
+                    }
 
-                if(check < target){
-                    i++;
-                }else if(check > target){
-                    j--;
-                }else{
-                    return new int[]{i+1, j+1};
+                    if (count > majorityCount) {
+                        return num;
+                    }
+
                 }
-            }
-        }
+
+        return -1;    
     }
 ```
