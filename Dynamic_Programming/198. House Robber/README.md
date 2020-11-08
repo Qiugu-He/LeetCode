@@ -20,6 +20,15 @@ Explanation: Rob house 1 (money = 2), rob house 3 (money = 9) and rob house 5 (m
 ```
 
 ```Java
+
+/*
+    DP Problem:
+
+    E.g. 2 - 7 - 9 - 3 - 1 
+
+    rob options: num[i-1] or nums[i-2]
+    Max.money: dp[i] = dp[i] = max(dp[i-2] + numd[i] , dp[i-1])
+*/
     public int rob(int[] nums) {
         if (nums == null || nums.length == 0)
             return 0;
